@@ -8,7 +8,7 @@
     "start": "parcel index.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "parcel build index.html --dist-dir ./dist --public-url /Forkify/"
+    "build": "parcel build index.html --dist-dir ./dist --public-url ./"
   },
   "author": "Jonas Schedtmann",
   "license": "ISC",
