@@ -1,11 +1,14 @@
 {
+  "homepage": "https://nijat-guliyev.github.io/Forkify/",
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe application",
   "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "parcel build index.html --dist-dir ./dist --public-url /Forkify/"
   },
   "author": "Jonas Schedtmann",
   "license": "ISC",
